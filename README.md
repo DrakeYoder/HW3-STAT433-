@@ -16,7 +16,7 @@ airports %>% inner_join(flight, c("faa" = "dest")) %>%
     ggtitle("Destination of Flight & Average Arrival Delay")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![unnamed-chunk-1-1](https://user-images.githubusercontent.com/78119439/196495939-a013b006-34f6-4f4b-a375-709414bf7fd2.png)
 
 ``` r
 #Q2)
@@ -124,7 +124,7 @@ plane_age_arr_delay %>% ggplot(aes(x=plane_age, y=mean_arr_delay)) + geom_point(
 
     ## Warning: Removed 5164 rows containing missing values (geom_point).
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![unnamed-chunk-3-1](https://user-images.githubusercontent.com/78119439/196497480-a8eff8af-d3ea-48c6-a152-ec8d9eee3b27.png)
 
 ``` r
 plane_age_dep_delay = flights %>% inner_join(planes, c("tailnum" = "tailnum")) %>% 
@@ -161,5 +161,5 @@ plane_age_dep_delay %>% ggplot(aes(x=plane_age, y=mean_dep_delay)) + geom_point(
     ## Warning: Removed 5175 rows containing non-finite values (stat_smooth).
 
     ## Warning: Removed 5175 rows containing missing values (geom_point).
-
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+    
+![unnamed-chunk-4-1](https://user-images.githubusercontent.com/78119439/196497517-621fb1ab-13e8-4df1-94fd-86a75c2d46a5.png)
